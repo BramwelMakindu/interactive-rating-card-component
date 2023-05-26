@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Overpass', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(216, 12%, 8%);
+}
+
+.main-div, .second-div{
+    width: 300px;
+    background-color:hsl(213, 19%, 18%);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.star{
+    padding: 10px;
+    background-color: hsl(213, 20%, 22%);
+    border-radius: 50%;
+}
+
+.details{
+    margin: 20px 0;
+}
+
+.details h2{
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 15px;
+}
+
+.details p{
+    color: hsl(217, 12%, 63%);
+    font-size: 15px;
+}
+
+.number-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.number-div div{
+    padding: 8px;
+    padding-top: 10px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: hsl(213, 20%, 22%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.number-div div:hover{
+    background-color: hsl(25, 97%, 53%);
+}
+
+.submit-btn{
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 30px;
+    border: none;
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    cursor: pointer; 
+    transition: 0.3s;
+}
+
+.submit-btn:hover{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+
+.main-div.active{
+    display: none;
+}
+
+/*------thank you state-----*/
+
+.second-div{
+    display: none;
+}
+
+.second-div.active{
+    display: block;
+}
+
+.second-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.selection-text{
+    background-color: hsl(213, 20%, 22%);
+    padding: 5px 15px;
+    font-size: 15px;
+    border-radius: 30px;
+    color: hsl(25, 97%, 53%);
+    margin: 20px 0;
+}
+
+.thanks-msg{
+    text-align: center;
+}
+
+.thanks-msg h2{
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 15px;
+}
+
+.thanks-msg p{
+    font-size: 15px;
+    color: hsl(217, 12%, 63%);
+}
